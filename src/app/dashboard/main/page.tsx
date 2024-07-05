@@ -1,8 +1,19 @@
+import { WidgetsGrid } from "@/components";
+
+export const metadata = {
+    title: 'Admin Dashboard',
+    description: 'Admin Dashboard',
+};
 
 export default function MainPage() {
     return (
-        <div>
-            <h1>Hello Page</h1>
+        <div className="text-black">
+            <h1 className="mt-2 text-3xl">Dashobard</h1>
+            <span className="text-xl">Información general</span>
+
+            <div className="flex flex-wrap p-2 items-center justify-center">
+                <WidgetsGrid />
+            </div>
         </div>
     );
 }
