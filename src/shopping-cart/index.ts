@@ -1,1 +1,4 @@
-export { CartCounter } from "./componentes/CartCounter";
+
+
+
+export { CartCounter } from './components/CartCounter';
