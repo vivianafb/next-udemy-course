@@ -1,18 +1,27 @@
-import { PokemonsResponse, SimplePokemon } from "@/pokemons";
-import { PokemonGrid } from "@/pokemons";
+import { FavoritePokemons, PokemonGrid, PokemonsReponse, SimplePokemon } from "@/pokemons";
+import { IoHeartOutline } from "react-icons/io5";
 
 
 export const metadata = {
-    title: 'Favoritos',
-    description: 'Mis pokemons favoritos',
+  title: 'Favoritos',
+  description: 'Ad minim sit cupidatat culpa consectetur.',
 };
 
 
+
+
 export default async function PokemonsPage() {
-    return (
-        <div className="flex flex-col">
-            <span className="text-5xl my-2">Listado de Pokémons favoritos <small className="text-pink-500">Estatico</small></span>
-            <PokemonGrid pokemons={[]} />
-        </div>
-    );
+
+
+  return (
+    <div className="flex flex-col">
+
+      <span className="text-5xl my-2">Pokémons Favoritos <small className="text-pink-500">Global State</small></span>
+
+      {/* <PokemonGrid pokemons={ [] } /> */}
+      <FavoritePokemons />
+
+    </div>
+  );
 }
+
